@@ -5,15 +5,24 @@ project:
   title: Crash course Bayesian system identification
   description: A Jupyter Book for Bayesian system identification 
   keywords: 
-    - Bayesian
+    - Bayes theorem
     - system identification
     - Jupyter Book
   authors: 
     - name: Andres Martínez Colán
-      affiliation: TNO
+      affiliations:
+        - id: tno
+          institution: TNO
+          department: Reliable Structures
+          address: Molengraaffsingel 8
+          city: Delft
+          country: The Netherlands
+          postal_code: 2629 JD
+      orcid: https://orcid.org/0000-0003-4089-964X
       email: andres.martinezcolan@tno.nl
-    - name: Miguel Mendoza Lugo
-      affiliation: TNO
+    - name: Miguel Angel Mendoza Lugo
+      affiliation: tno
+      orcid: https://orcid.org/0000-0001-8488-1447 
       email: miguel.mendozalugo@tno.nl
   # github:
   # To autogenerate a Table of Contents, run "jupyter book init --write-toc"
