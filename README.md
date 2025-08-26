@@ -5,3 +5,5 @@
 This Jupyter book is part of the Bayesian System Identification crash course which can be found at: 
 https://ci.tno.nl/gitlab/andres.martinezcolan-tno/crashcoursebayes
 
+The Jupyter Book can be accessed at:
+https://mike-mendoza.github.io/bayesian_system_id/
