@@ -1,14 +1,24 @@
 # Introduction
+Welcome to the crash course on **Bayesian system identification**. This approach 
+allows us to systematically combine:
+- Physical/mathematical models of engineering systems
+- Noisy sensor measurements
+- Prior engineering knowledge and constraints
 
-Welcome to the crash course on **Bayesian System Identification**, a fundamental concept in statistics and probability theory that allows us to update our beliefs when new evidence is available. This approach is rooted in **Bayes' Theorem**, which provides a mathematical framework for revising probabilities based on observed data.
+The result? **Calibrated parameters with quantified uncertainty**.
 
-In this course, we will explore the key principles of **Bayesian updating**, including:
+## Course Structure
+Through hands-on exercises, you'll learn to:
+1. Apply Bayes' theorem for events
+2. Use conjugate priors for analytical solutions  
+3. Perform Bayesian inference via numerical integration
+4. Use the specialized Bayesian system identification library `probeye`
+5. Handle multiple sensors and parameter
+6. Apply advanced sampling methods (MCMC, Nested sampling)
+7. Compare and select between competing models
 
-- Understanding Prior and Posterior Probabilities: Learn how to define and differentiate between prior beliefs and updated beliefs after considering new evidence.
-- Applying Bayes' Theorem: Discover how to use the theorem to calculate the posterior probability and make informed decisions.
-- Practical applications: Examine examples where Bayesian updating is applied, from medical diagnosis to machine learning.
-
-By the end of this course, you will have a solid grasp of how to implement Bayesian updates in various scenarios, enhancing your analytical skills and decision-making processes. Let's dive in!
-
-
-
+## Requirements
+To follow along, you will need:
+- A Python version between 3.6 and 3.11
+- A code editor that supports Jupyter notebooks (e.g., VS Code)
+- A virtual environment with the required packages installed: `probeye`, `ipykernel`

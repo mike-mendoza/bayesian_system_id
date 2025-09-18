@@ -24,6 +24,9 @@ project:
       affiliation: tno
       orcid: https://orcid.org/0000-0001-8488-1447 
       email: miguel.mendozalugo@tno.nl
+    - name: Árpád Rózsás
+      affiliation: tno
+
   # github:
   # To autogenerate a Table of Contents, run "jupyter book init --write-toc"
   toc:
