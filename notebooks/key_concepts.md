@@ -1,21 +1,42 @@
 # Key Concepts
+The heart of Bayesian inference is **Bayes' theorem**, which takes this form for continuous variables:
 
-By understanding these key concepts, you will be able to apply Bayesian updating in practical scenarios, enhancing your analytical capabilities and decision-making skills. Let's get started!
+$$p(\boldsymbol{\theta}|\boldsymbol{y}) = \frac{p(\boldsymbol{y}|\boldsymbol{\theta}) \cdot p(\boldsymbol{\theta})}{\int p(\boldsymbol{y}|\boldsymbol{\theta}) \cdot p(\boldsymbol{\theta}) \, d\boldsymbol{\theta}}$$
+
+or more intuitively:
+$$\text{Posterior} = \frac{\text{Likelihood} \times \text{Prior}}{\text{Evidence}}$$
+
+- **Parameters ($\boldsymbol{\theta}$)**: The unknown system properties we want to identify
+
+- **Measurements ($\boldsymbol{y}$)**: Noisy sensor data from the system
+
+- **Prior $p(\boldsymbol{\theta})$**: Parameter probabilities we assign before seeing data
+
+- **Likelihood $p(\boldsymbol{y}|\boldsymbol{\theta})$**: Probability of observing the data given parameters
+
+- **Posterior $p(\boldsymbol{\theta}|\boldsymbol{y})$**: Updated parameter knowledge after seeing data
 
 
-1. **Bayes' Theorem**: The cornerstone of Bayesian updating, Bayes' Theorem mathematically describes how to update the probability of a hypothesis based on new evidence. It is expressed as:
-   $$P(H|E) = \frac{P(E|H) \cdot P(H)}{P(E)}$$
-   where $P(H|E)$ is the posterior probability, $P(E|H)$ is the likelihood, $P(H)$ is the prior probability, and $P(E)$ is the marginal likelihood.
+## Methods for Bayesian inference
 
-2. **Prior Probability**: This represents our initial belief about a hypothesis before observing any new evidence. It reflects what we know or assume about the situation.
+Bayesian inference methods can be categorized based on their computational approach:
 
-3. **Likelihood**: The likelihood quantifies how probable the observed evidence is, given a specific hypothesis. It helps us assess the strength of the evidence in relation to our prior beliefs.
+- **Exact methods**: Conjugate priors provide analytical solutions when prior and posterior distributions belong to the same family
+- **Exact methods (if run long enough)**: Numerical integration and sampling methods (MCMC, Nested sampling) that converge to exact solutions given sufficient computational time
+- **Approximate methods**: Variational inference and likelihood-free methods that provide fast approximations to the posterior
 
-4. **Posterior Probability**: After incorporating new evidence, the posterior probability represents our updated belief about the hypothesis. It combines the prior probability and the likelihood to provide a more informed estimate.
+![Methods for Bayesian inference](../figures/methods_bayesian_inference.png)
 
-5. **Conjugate Priors**: In Bayesian analysis, certain prior distributions are chosen because they simplify the updating process. These are known as conjugate priors, and they lead to a posterior distribution that is in the same family as the prior.
+> **_Note:_**  Approximate methods are not covered in this crash course.
 
-% An admonition containing a note
-:::{note}
-Bayesian system identification uses Bayes’ theorem to update uncertain model parameters
-:::
+## Applications
+Some applications of Bayesian inference to structural engineering are:
+
+1. Updating the resistance of a structure after passing a proof load test
+2. Updating the reliability of a structure after it has survived a number of years
+3. Updating the deterioration distribution on a structure after detecting corrosion in some areas
+4. Updating the parameters of a finite element model after sensor data
+
+The last application is known as system identification. Other names for it are Model updating and Model calibration.
+
+
