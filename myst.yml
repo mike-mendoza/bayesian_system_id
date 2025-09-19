@@ -27,6 +27,9 @@ project:
     - name: Árpád Rózsás
       affiliation: tno
 
+  github: https://github.com/mike-mendoza/bayesian_system_id
+  jupyter: true
+
   # github:
   # To autogenerate a Table of Contents, run "jupyter book init --write-toc"
   toc:
