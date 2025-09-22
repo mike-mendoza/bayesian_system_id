@@ -47,7 +47,6 @@ project:
         - file: notebooks/multivariate.ipynb
         - file: notebooks/nested_sampling.ipynb  
         - file: notebooks/model_selection.ipynb    
-        
 site:
   template: book-theme
   options:
